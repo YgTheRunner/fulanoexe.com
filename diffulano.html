@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fulano.sites</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background-color: #0a0a0a;
+      color: #f1f1f1;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      color: #00f2ff;
+      text-shadow: 0 0 10px #00f2ff, 0 0 20px #00f2ff;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
+      margin-bottom: 2rem;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+      width: 100%;
+      max-width: 1000px;
+      margin-bottom: 2rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .links {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 3rem;
+    }
+
+    .link-btn {
+      background-color: #111;
+      border: 2px solid #00f2ff;
+      padding: 1rem 2rem;
+      border-radius: 10px;
+      color: #00f2ff;
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: all 0.3s;
+      box-shadow: 0 0 10px #00f2ff55;
+    }
+
+    .link-btn:hover {
+      background-color: #00f2ff;
+      color: #000;
+      box-shadow: 0 0 20px #00f2ff;
+      transform: scale(1.05);
+    }
+
+    footer {
+      color: #666;
+      font-size: 0.9rem;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+
+      .link-btn {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Fulano.sites</h1>
+    <p>Conecte-se comigo e veja imagens inspiradoras</p>
+  </header>
+
+  <div class="gallery">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Guido_Reni_-_Archangel_Michael_-_WGA19301.jpg" alt="Arcanjo Miguel">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Saint_Michael_and_the_Devil.jpg/800px-Saint_Michael_and_the_Devil.jpg" alt="Arcanjo Miguel 2">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/St._Michael_Victorious_over_the_Devil_02.jpg/800px-St._Michael_Victorious_over_the_Devil_02.jpg" alt="Arcanjo Miguel 3">
+  </div>
+
+  <section class="links">
+    <a class="link-btn" href="https://www.instagram.com/fulano_exe/" target="_blank">Instagram</a>
+    <a class="link-btn" href="https://www.youtube.com/channel/UCw1-Qh_WLLoOvsYxcY0zXqQ" target="_blank">YouTube</a>
+  </section>
+
+  <footer>
+    © 2025 Fulano.sites — Todos os direitos reservados
+  </footer>
+</body>
+</html>
